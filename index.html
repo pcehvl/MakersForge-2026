@@ -84,6 +84,9 @@
   footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
     font-size: .875rem; color: var(--muted); }
   a { color: var(--accent); }
+  .shared { margin: 0 0 20px; padding: 14px 18px; border: 1px dashed var(--border);
+    border-radius: 12px; background: var(--surface); font-size: .98rem; }
+  .shared strong { color: var(--accent); }
 </style>
 </head>
 <body>
@@ -94,14 +97,15 @@
   <p class="byline">Asst. Prof. Per Christian Engdal · Western Norway University of Applied Sciences (HVL)</p>
 
   <h2>Choose your track</h2>
+  <p class="shared"><strong>Product loop: OpenCode in both tracks.</strong> You work with the Product Assistant in OpenCode to frame the product and write the specs. Only the execution loop – where the code is built – differs.</p>
   <div class="tracks">
     <a class="track oc" href="https://pcehvl.github.io/MF_Spec-Driven_AI-Assisted-SE/">
       <span class="tag">Main track</span>
       <h3>OpenCode</h3>
       <p>Both loops run in OpenCode on your own machine.</p>
       <ul>
-        <li>Product loop: Product Assistant</li>
-        <li>Execution loop: Planner and Coder, locally</li>
+        <li><strong>Product loop: OpenCode</strong> (Product Assistant)</li>
+        <li>Execution loop: OpenCode (Planner and Coder), locally</li>
         <li>Supabase, Pull Requests, deploy with Vercel</li>
         <li><strong>Free:</strong> uses free models in OpenCode</li>
         <li>Setup: about 60–90 minutes</li>
@@ -113,7 +117,7 @@
       <h3>OpenCode + Lovable</h3>
       <p>OpenCode runs the product loop, Lovable builds – connected through Lovable's MCP server.</p>
       <ul>
-        <li>Product loop: Product Assistant (unchanged)</li>
+        <li><strong>Product loop: OpenCode</strong> (Product Assistant) – same as the main track</li>
         <li>Execution loop: Lovable, driven from the Lovable chat</li>
         <li>/handover and /return between the loops, publish in Lovable</li>
         <li><strong>Can cost money:</strong> Lovable usage depends on your plan</li>
@@ -130,6 +134,7 @@
       <tbody>
         <tr><td>Best if you…</td><td>want full control of code, tests and deploy – at no cost</td><td>want to get to a running app fast with less local setup</td></tr>
         <tr><td>Cost</td><td>Free – OpenCode with free models</td><td>Can cost money – Lovable is a paid service depending on plan and usage</td></tr>
+        <tr><td>Product loop</td><td><strong>OpenCode</strong>, Product Assistant</td><td><strong>OpenCode</strong>, Product Assistant (same)</td></tr>
         <tr><td>Execution loop</td><td>OpenCode, Planner and Coder on your machine</td><td>Lovable, in the Lovable chat</td></tr>
         <tr><td>Quality gate</td><td><code>npm run verify</code>, Pull Request</td><td>Self-check per ACn, /accept-story, security scan</td></tr>
         <tr><td>Deploy</td><td>Vercel CLI</td><td>Publish in Lovable</td></tr>
