@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MakersForge 2026</title>
+<meta name="description" content="MakersForge 2026 – Beyond Vibe Coding: spec-driven, AI-assisted software engineering with agents. Choose your track.">
+<style>
+  :root {
+    --bg: #f7f6f2;
+    --surface: #ffffff;
+    --text: #1d1d1f;
+    --muted: #5c5c66;
+    --border: #e2e0d8;
+    --accent: #c2410c;
+    --accent-2: #6d28d9;
+    --accent-soft: #fff1e8;
+    --accent-2-soft: #f3edff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141416;
+      --surface: #1d1d21;
+      --text: #ececf0;
+      --muted: #a2a2ad;
+      --border: #2e2e35;
+      --accent: #fb923c;
+      --accent-2: #a78bfa;
+      --accent-soft: #2a1d14;
+      --accent-2-soft: #221b33;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+  }
+  main { max-width: 960px; margin: 0 auto; padding: 56px 16px 40px; }
+  .eyebrow {
+    font-size: .8rem; font-weight: 700; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--accent);
+  }
+  h1 { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.1; margin: .3em 0 .4em; }
+  .lead { font-size: 1.15rem; color: var(--muted); max-width: 62ch; margin: 0; }
+  .byline { margin-top: 1rem; font-size: .95rem; color: var(--muted); }
+  h2 { font-size: 1.35rem; margin: 3rem 0 1rem; }
+  .tracks { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+  .track {
+    display: flex; flex-direction: column;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 14px; padding: 24px; text-decoration: none; color: inherit;
+    transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+  }
+  .track:hover, .track:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,.08);
+    border-color: var(--c);
+    outline: none;
+  }
+  .track.oc { --c: var(--accent); --cs: var(--accent-soft); }
+  .track.lv { --c: var(--accent-2); --cs: var(--accent-2-soft); }
+  .tag {
+    align-self: flex-start; font-size: .75rem; font-weight: 700;
+    padding: 3px 10px; border-radius: 999px; background: var(--cs); color: var(--c);
+  }
+  .track h3 { font-size: 1.3rem; margin: .7rem 0 .3rem; }
+  .track p { margin: 0 0 1rem; color: var(--muted); }
+  .track ul { margin: 0 0 1.2rem; padding-left: 1.1rem; font-size: .95rem; }
+  .track li { margin: .2rem 0; }
+  .cta { margin-top: auto; font-weight: 700; color: var(--c); }
+  table { width: 100%; border-collapse: collapse; background: var(--surface);
+    border: 1px solid var(--border); border-radius: 12px; overflow: hidden; font-size: .95rem; }
+  th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { background: var(--bg); font-weight: 600; }
+  tr:last-child td { border-bottom: none; }
+  .table-wrap { overflow-x: auto; }
+  blockquote {
+    margin: 2rem 0 0; padding: 16px 20px; border-left: 4px solid var(--accent);
+    background: var(--surface); border-radius: 0 10px 10px 0; color: var(--text);
+  }
+  footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
+    font-size: .875rem; color: var(--muted); }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">MakersForge 2026</div>
+  <h1>Beyond Vibe Coding – From Concept to MVP</h1>
+  <p class="lead">Spec-driven, AI-assisted software engineering with agents. Same method, two harnesses – pick the track that fits you and follow its course page.</p>
+  <p class="byline">Asst. Prof. Per Christian Engdal · Western Norway University of Applied Sciences (HVL)</p>
+
+  <h2>Choose your track</h2>
+  <div class="tracks">
+    <a class="track oc" href="https://pcehvl.github.io/MF_Spec-Driven_AI-Assisted-SE/">
+      <span class="tag">Main track</span>
+      <h3>OpenCode</h3>
+      <p>Both loops run in OpenCode on your own machine.</p>
+      <ul>
+        <li>Product loop: Product Assistant</li>
+        <li>Execution loop: Planner and Coder, locally</li>
+        <li>Supabase, Pull Requests, deploy with Vercel</li>
+        <li>Setup: about 60–90 minutes</li>
+      </ul>
+      <span class="cta">Go to the OpenCode track →</span>
+    </a>
+    <a class="track lv" href="https://pcehvl.github.io/MF_Spec-Driven_AI-Assisted-SE-Lovable/">
+      <span class="tag">Lovable track · pre-release</span>
+      <h3>OpenCode + Lovable</h3>
+      <p>OpenCode runs the product loop, Lovable builds – connected through Lovable's MCP server.</p>
+      <ul>
+        <li>Product loop: Product Assistant (unchanged)</li>
+        <li>Execution loop: Lovable, driven from the Lovable chat</li>
+        <li>/handover and /return between the loops, publish in Lovable</li>
+        <li>Setup: about 45 minutes, only Git and OpenCode locally</li>
+      </ul>
+      <span class="cta">Go to the Lovable track →</span>
+    </a>
+  </div>
+
+  <h2>Which one should I pick?</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th></th><th>OpenCode</th><th>OpenCode + Lovable</th></tr></thead>
+      <tbody>
+        <tr><td>Best if you…</td><td>want full control of code, tests and deploy</td><td>want to get to a running app fast with less local setup</td></tr>
+        <tr><td>Execution loop</td><td>OpenCode, Planner and Coder on your machine</td><td>Lovable, in the Lovable chat</td></tr>
+        <tr><td>Quality gate</td><td><code>npm run verify</code>, Pull Request</td><td>Self-check per ACn, /accept-story, security scan</td></tr>
+        <tr><td>Deploy</td><td>Vercel CLI</td><td>Publish in Lovable</td></tr>
+        <tr><td>Installed locally</td><td>Git, gh, Node.js, OpenCode, Supabase CLI, Vercel CLI</td><td>Git and OpenCode</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <blockquote><strong>Same rule in both tracks:</strong> the spec is the contract. Generated code alone is never Done – the Product Owner accepts.</blockquote>
+
+  <footer>MakersForge 2026 · Course material by Per Christian Engdal, HVL</footer>
+</main>
+</body>
+</html>
