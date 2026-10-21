@@ -87,6 +87,12 @@
   .shared { margin: 0 0 20px; padding: 14px 18px; border: 1px dashed var(--border);
     border-radius: 12px; background: var(--surface); font-size: .98rem; }
   .shared strong { color: var(--accent); }
+  .lecture { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+  .lecture a { display: block; padding: 14px 16px; background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; text-decoration: none; color: inherit; }
+  .lecture a:hover, .lecture a:focus-visible { border-color: var(--accent); outline: none; }
+  .lecture strong { display: block; color: var(--accent); }
+  .lecture span { font-size: .9rem; color: var(--muted); }
 </style>
 </head>
 <body>
@@ -144,6 +150,16 @@
   </div>
 
   <blockquote><strong>Same rule in both tracks:</strong> the spec is the contract. Generated code alone is never Done – the Software Engineer or Product Owner decides.</blockquote>
+
+
+  <h2>The lecture</h2>
+  <p class="lead" style="font-size:1rem;margin-bottom:16px">Shared by both tracks: the same method and the same seven-step MVP playbook. Only the tools in the execution loop differ.</p>
+  <div class="lecture">
+    <a href="https://pcehvl.github.io/MF_Spec-Driven_AI-Assisted-SE/lectures/Beyond_VibeCoding_Spec-Driven_AI-Assisted_Development.pdf"><strong>Slides (PDF)</strong><span>The full slide deck</span></a>
+    <a href="https://youtu.be/9rTKgsyKrA0"><strong>Lecture video</strong><span>The recorded lecture</span></a>
+    <a href="https://pcehvl.github.io/MF_Spec-Driven_AI-Assisted-SE/lectures/notes.html"><strong>Lecture notes</strong><span>The key ideas of each part</span></a>
+    <a href="https://pcehvl.github.io/MF_Spec-Driven_AI-Assisted-SE/demos.html"><strong>Demos</strong><span>What each demo shows</span></a>
+  </div>
 
   <footer>MakersForge 2026 · Course material by Per Christian Engdal, HVL</footer>
 </main>
