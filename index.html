@@ -93,6 +93,10 @@
   .lecture a:hover, .lecture a:focus-visible { border-color: var(--accent); outline: none; }
   .lecture strong { display: block; color: var(--accent); }
   .lecture span { font-size: .9rem; color: var(--muted); }
+  .mc { margin-top: 2.5rem; padding: 22px 24px; background: var(--surface);
+    border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: 14px; }
+  .mc h2 { margin: .35rem 0 .4rem; }
+  .mc p { margin: 0 0 16px; color: var(--muted); }
 </style>
 </head>
 <body>
@@ -102,7 +106,18 @@
   <p class="lead">Spec-driven, AI-assisted software engineering with agents. Same method, two harnesses – pick the track that fits you and follow its course page.</p>
   <p class="byline">Asst. Prof. Per Christian Engdal · Western Norway University of Applied Sciences (HVL)</p>
 
-  <h2>Choose your track</h2>
+  <section class="mc" id="master-class">
+    <span class="tag" style="--cs:var(--accent-soft);--c:var(--accent)">Master class</span>
+    <h2>Master class · Saturday 24 October 2026</h2>
+    <p>A stand-alone master class with its own slide deck – separate from the video lecture below.</p>
+    <div class="lecture">
+      <a href="masterclass/Beyond_VibeCoding_Spec-Driven_AI-Assisted_Development_MC_2026-10-24.pdf"><strong>Master class slides (PDF)</strong><span>Beyond Vibe Coding · 24 October 2026</span></a>
+      <a href="#tracks"><strong>Choose your track</strong><span>Set up the harness and build your MVP</span></a>
+      <a href="#video-lecture"><strong>Video lecture</strong><span>The recorded lecture, slides, notes and demos</span></a>
+    </div>
+  </section>
+
+  <h2 id="tracks">Choose your track</h2>
   <p class="shared"><strong>Product loop: OpenCode in both tracks.</strong> You work with the Product Assistant in OpenCode to frame the product and write the specs. Only the execution loop – where the code is built – differs.</p>
   <div class="tracks">
     <a class="track oc" href="https://pcehvl.github.io/MF_Spec-Driven_AI-Assisted-SE/">
@@ -152,10 +167,10 @@
   <blockquote><strong>Same rule in both tracks:</strong> the spec is the contract. Generated code alone is never Done – the Software Engineer or Product Owner decides.</blockquote>
 
 
-  <h2>The lecture</h2>
-  <p class="lead" style="font-size:1rem;margin-bottom:16px">Shared by both tracks: the same method and the same seven-step MVP playbook. Only the tools in the execution loop differ.</p>
+  <h2 id="video-lecture">Video lecture</h2>
+  <p class="lead" style="font-size:1rem;margin-bottom:16px">The recorded lecture with demos for every phase. Shared by both tracks: the same method and the same seven-step MVP playbook. Only the tools in the execution loop differ.</p>
   <div class="lecture">
-    <a href="https://pcehvl.github.io/MF_Spec-Driven_AI-Assisted-SE/lectures/Beyond_VibeCoding_Spec-Driven_AI-Assisted_Development.pdf"><strong>Slides (PDF)</strong><span>The full slide deck</span></a>
+    <a href="https://pcehvl.github.io/MF_Spec-Driven_AI-Assisted-SE/lectures/Beyond_VibeCoding_Spec-Driven_AI-Assisted_Development.pdf"><strong>Lecture slides (PDF)</strong><span>The slide deck for the video lecture</span></a>
     <a href="https://youtu.be/dxGCkEh3MBU"><strong>Lecture video</strong><span>The recorded lecture</span></a>
     <a href="https://pcehvl.github.io/MF_Spec-Driven_AI-Assisted-SE/lectures/notes.html"><strong>Lecture notes</strong><span>The key ideas of each part</span></a>
     <a href="https://pcehvl.github.io/MF_Spec-Driven_AI-Assisted-SE/demos.html"><strong>Demos</strong><span>What each demo shows</span></a>
